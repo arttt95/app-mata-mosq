@@ -1,6 +1,7 @@
 var altura = 0
 var largura = 0
 var vidas = 1
+var tempo = 10
 
 function ajustaTamanhoPalcoJogo() {
 
@@ -15,6 +16,26 @@ function ajustaTamanhoPalcoJogo() {
 }
 
 ajustaTamanhoPalcoJogo()
+
+var crono = setInterval(function() {
+    
+    tempo -= 1
+
+    if (tempo < 0) {
+
+        clearInterval(crono)
+        clearInterval(criaMosca)
+
+        //window.location.href = 'vitoria.html'
+        alert('Vitória')
+
+    } else {
+
+        document.getElementById('crono').innerHTML = tempo
+
+    }
+
+}, 1000)
 
 function posicaoRandomica () {
 

@@ -4,7 +4,7 @@
 
   <meta charset="UTF-8">
 
-  <title>Mata Mosquito</title>
+  <title>Game Over</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,25 +14,22 @@
   <!-- Estilo Customizado - CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <script src="script.js"></script>
-
       
 
 </head>
 
-<body onresize="ajustaTamanhoPalcoJogo()">
+<body>
 
-  <div class="painel">
-
-    <div class="vida">
-      <img id="v1" src="img/coracao_cheio.png">
-      <img id="v2" src="img/coracao_cheio.png">
-      <img id="v3" src="img/coracao_cheio.png">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="crono">Tempo restante: <span id="crono"></span></div>
-
-  </div>
+ 
 
 
 
@@ -48,14 +45,6 @@
 
 
 
-  
-<script>
-
-  document.getElementById('crono').innerHTML = tempo
-
-  var criaMosca = setInterval(function() {
-    posicaoRandomica()
-  }, 2000)
 </script>
 
 </body>	
