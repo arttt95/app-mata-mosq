@@ -26,8 +26,7 @@ var crono = setInterval(function() {
         clearInterval(crono)
         clearInterval(criaMosca)
 
-        //window.location.href = 'vitoria.html'
-        alert('Vitória')
+        window.location.href = 'vitoria.html'
 
     } else {
 
