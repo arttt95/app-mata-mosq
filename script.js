@@ -3,6 +3,7 @@ var largura = 0
 var vidas = 1
 var tempo = 10
 
+
 var nivel = window.location.search
 
 nivel = nivel.replace('?', '')
@@ -25,6 +26,7 @@ if (nivel === 'normal') {
     criaMoscaTempo = 750
 
 }
+
 
 function ajustaTamanhoPalcoJogo() {
 
@@ -134,3 +136,14 @@ function ladoAleatorio () {
 
 }
 
+
+function iniciarJogo() {
+
+    var nivel = document.getElementById('nivel').value
+    
+    if (nivel == '') {
+        alert('Selecione um nível para iniciar o jogo')
+        return false
+    }
+    
+}
