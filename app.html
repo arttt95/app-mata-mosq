@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Mata Mosquito</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- Estilo Customizado - CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="script.js"></script>
+
+      
+
+</head>
+
+<body onresize="ajustaTamanhoPalcoJogo()">
+
+  <div class="painel">
+
+    <div class="vida">
+      <img id="v1" src="img/coracao_cheio.png">
+      <img id="v2" src="img/coracao_cheio.png">
+      <img id="v3" src="img/coracao_cheio.png">
+    </div>
+
+    <div class="crono">Tempo restante: <span id="crono"></span></div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script>
+
+  document.getElementById('crono').innerHTML = tempo
+
+  var criaMosca = setInterval(function() {
+    posicaoRandomica()
+  }, criaMoscaTempo)
+</script>
+
+</body>	
+
+</html>
